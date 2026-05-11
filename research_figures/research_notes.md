@@ -25,3 +25,63 @@ In parallel, advancements in Large Language Models (LLMs) and Generative AI have
 Despite these advancements, most existing research focuses either on interpretability techniques (such as SHAP or LIME) or on natural language generation separately. There is limited work on integrating both explainability and generative reasoning into a unified pipeline for business applications. This research addresses that gap by combining machine learning models, SHAP, LIME, and Generative AI to create a complete explainable churn prediction system.
 
 
+# 4. Proposed Methodology
+
+This section presents the proposed Explainable AI pipeline for customer churn prediction. The system integrates machine learning models with explainability techniques (SHAP and LIME) and a Generative AI layer to produce human-readable business insights.
+
+# Dataset Description
+
+The study uses the Telco Customer Churn dataset, which contains customer demographic details, account information, and service usage patterns. The target variable indicates whether a customer has churned or not. The dataset includes features such as tenure, monthly charges, contract type, internet service, and payment method.
+
+# 4.2 Data Preprocessing
+
+Data preprocessing is performed to ensure model readiness and improve prediction quality. The steps include handling missing values, encoding categorical variables using label encoding or one-hot encoding, and normalizing numerical features. Additionally, feature selection is applied to remove irrelevant or redundant attributes.
+
+# 4.3 Machine Learning Models
+
+Multiple machine learning models are trained and evaluated to identify the best-performing approach for churn prediction:
+
+Logistic Regression (baseline linear model)
+Random Forest Classifier (ensemble-based model)
+XGBoost Classifier (gradient boosting model)
+Artificial Neural Network (deep learning model)
+
+Each model is trained on the preprocessed dataset and evaluated using accuracy and AUC score.
+
+# 4.4 Model Evaluation
+
+Model performance is measured using standard classification metrics including accuracy, precision, recall, F1-score, and ROC-AUC. Among all models, the Artificial Neural Network achieved the highest performance with an accuracy of 79.60% and an AUC score of 0.835.
+
+# 4.5 Explainability Layer (SHAP and LIME)
+
+To improve interpretability, SHAP and LIME are applied on the trained models:
+
+SHAP is used to compute global and local feature importance, helping identify which features most influence churn prediction.
+LIME is used to generate local explanations for individual predictions by approximating the model behavior around specific data points.
+
+These techniques help convert black-box predictions into interpretable insights.
+
+# 4.6 Generative AI Explanation Layer
+
+A Generative AI module is integrated on top of the explainability layer. It converts SHAP and LIME outputs into natural language explanations. Instead of presenting technical feature importance values, the system generates business-friendly insights such as:
+
+Reasons why a customer is likely to churn
+Key risk factors influencing churn
+Suggested retention strategies for business teams
+
+This layer bridges the gap between technical AI outputs and business decision-making.
+
+# 4.7 System Architecture
+
+The overall system follows a multi-stage pipeline:
+
+Data Collection (Telco dataset)
+Data Preprocessing
+Machine Learning Model Training
+Churn Prediction Output
+SHAP + LIME Explanation Generation
+Generative AI Interpretation Layer
+Business Insight Generation
+
+This architecture ensures that every prediction is accompanied by an interpretable and actionable explanation.
+
