@@ -17,3 +17,24 @@ Explainable Artificial Intelligence (XAI) addresses this challenge by providing 
 
 This research proposes a novel explainable AI pipeline that combines machine learning, SHAP, LIME, and Generative AI to create business-readable customer churn explanations. The system not only predicts churn risk but also generates understandable business insights and retention recommendations for decision-makers.
 
+## 2. Related Work
+
+Explainable Artificial Intelligence (XAI) has become an important research area due to the increasing adoption of machine learning systems in critical decision-making applications. Traditional machine learning models often achieve high predictive performance but lack interpretability, making it difficult for users to understand the reasoning behind predictions.
+
+Lundberg and Lee (2017) introduced SHAP (SHapley Additive exPlanations), a unified framework for interpreting machine learning predictions using concepts from cooperative game theory. SHAP provides both local and global interpretability and has become one of the most widely adopted explainability techniques in AI research.
+
+Ribeiro et al. (2016) proposed LIME (Local Interpretable Model-Agnostic Explanations), which explains individual predictions by approximating complex models locally with interpretable surrogate models. LIME enables users to understand the factors influencing specific predictions regardless of the underlying model architecture.
+
+Recent studies have explored the application of explainable AI in business analytics, particularly in customer behavior prediction and financial risk assessment. These systems improve transparency and increase stakeholder trust in AI-driven decisions.
+
+Large Language Models (LLMs) and Generative AI systems are also increasingly being integrated into analytical workflows to convert technical outputs into human-readable explanations. However, limited research exists on combining SHAP, LIME, and Generative AI into a unified business-oriented explainability pipeline. This research attempts to bridge that gap.
+
+## References
+
+1. Lundberg, S. M., & Lee, S. I. (2017). A Unified Approach to Interpreting Model Predictions. Advances in Neural Information Processing Systems (NeurIPS).
+
+2. Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "Why Should I Trust You?": Explaining the Predictions of Any Classifier. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining.
+
+3. Molnar, C. (2022). Interpretable Machine Learning. Lulu.com.
+
+4. Adadi, A., & Berrada, M. (2018). Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI). IEEE Access.
