@@ -85,3 +85,50 @@ Business Insight Generation
 
 This architecture ensures that every prediction is accompanied by an interpretable and actionable explanation.
 
+# RESULTS AND DISCUSSION CONTENT
+
+# 5. Results and Discussion
+
+This section presents the experimental results obtained from multiple machine learning models along with explainability analysis using SHAP and LIME. The discussion highlights both predictive performance and interpretability of the proposed system.
+
+# 5.1 Model Performance Comparison
+
+Several machine learning models were evaluated on the Telco Customer Churn dataset. The performance results are summarized below:
+
+Logistic Regression: Moderate performance with limited ability to capture non-linear relationships.
+Random Forest: Improved performance due to ensemble learning and feature randomness.
+XGBoost Classifier: Strong performance with better handling of feature interactions.
+Artificial Neural Network: Achieved the highest performance among all models.
+
+The Artificial Neural Network achieved an accuracy of 79.60% and an AUC score of 0.835, making it the best-performing model for churn prediction in this study.
+
+# 5.2 Explainability Results using SHAP
+
+SHAP analysis was used to identify the most influential features contributing to customer churn. The results indicate that features such as contract type, tenure, monthly charges, and internet service have a significant impact on churn prediction.
+
+Global SHAP analysis helped in understanding overall feature importance across the dataset, while local SHAP explanations provided instance-level interpretability for individual customer predictions.
+
+# 5.3 Explainability Results using LIME
+
+LIME was applied to generate local explanations for individual predictions. It approximates the model behavior around a single instance and identifies which features contributed most to a specific churn decision.
+
+The LIME results showed that customers with short tenure, high monthly charges, and month-to-month contracts are more likely to churn. These insights align with SHAP findings, reinforcing model reliability.
+
+# 5.4 Generative AI-Based Business Explanations
+
+A Generative AI layer was used to convert SHAP and LIME outputs into human-readable business insights. Instead of presenting technical feature importance values, the system generated explanations such as:
+
+“The customer is likely to churn due to high monthly charges and short tenure.”
+“Offering long-term contracts may reduce churn risk.”
+“Customers using fiber optic internet service show higher churn probability.”
+
+This transformation significantly improves interpretability for non-technical stakeholders and decision-makers.
+
+# 5.5 Discussion
+
+The results demonstrate that while traditional machine learning models provide strong predictive performance, their interpretability is limited without explainability tools. SHAP and LIME effectively bridge this gap by providing transparent insights into model decisions.
+
+However, raw explainability outputs are still not easily understandable for business users. The integration of Generative AI addresses this limitation by translating technical explanations into actionable business language.
+
+The proposed pipeline successfully combines prediction accuracy with interpretability, making it suitable for real-world business applications such as customer retention strategies in telecom industries.
+
