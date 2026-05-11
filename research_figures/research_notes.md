@@ -132,3 +132,25 @@ However, raw explainability outputs are still not easily understandable for busi
 
 The proposed pipeline successfully combines prediction accuracy with interpretability, making it suitable for real-world business applications such as customer retention strategies in telecom industries.
 
+# CONCLUSION CONTENT
+
+# 6. Conclusion and Future Scope
+
+This research presented an Explainable Artificial Intelligence pipeline for customer churn prediction by integrating machine learning models with SHAP, LIME, and Generative AI. The proposed system not only predicts customer churn but also provides interpretable and human-readable explanations for each prediction.
+
+Experimental results showed that the Artificial Neural Network achieved the best performance with an accuracy of 79.60% and an AUC score of 0.835. However, beyond predictive performance, the key contribution of this work lies in improving model transparency and usability through explainability techniques.
+
+SHAP and LIME effectively provided insights into feature importance and individual predictions, enabling better understanding of model behavior. Furthermore, the Generative AI layer successfully transformed technical explanations into natural language business insights, making the system more practical for non-technical stakeholders and decision-makers.
+
+The proposed framework bridges the gap between machine learning interpretability and business usability, making it suitable for real-world customer retention strategies in industries such as telecommunications, banking, and subscription-based services.
+
+# 6.1 Future Scope
+
+Although the proposed system demonstrates strong performance and interpretability, there are several directions for future enhancement:
+
+Integration of real-time churn prediction systems using streaming data.
+Deployment of the model as a web-based or cloud-based decision support system.
+Incorporation of more advanced deep learning architectures such as transformers.
+Improvement of Generative AI explanations using domain-specific fine-tuning.
+Extension of the framework to other domains such as fraud detection and customer segmentation.
+
